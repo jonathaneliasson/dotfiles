@@ -1,0 +1,35 @@
+# Easier navigation: .., ..., ...., ....., ~ and -
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# Get week number
+alias week='date +%V'
+
+# IP addresses
+alias ip="dig TXT +short o-o.myaddr.l.google.com @ns1.google.com"
+alias localip="ipconfig getifaddr en0"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
+# Flush Directory Service cache
+alias flush="$ sudo systemd-resolve --flush-caches"
+
+# View HTTP traffic
+alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
+alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+
+# Pretty Ping
+alias ping='prettyping --nolegend'
+
+# Untar shortcut
+alias untar='tar -zxvf '
+
+# Generate 20 character password
+alias getpass="openssl rand -base64 20"
+
+# Control checksum
+alias sha='shasum -a 256 '
+
+# ls -lha shortcut
+alias ll="ls -lha"
