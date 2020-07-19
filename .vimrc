@@ -9,7 +9,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -35,7 +35,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
-"filetype plugin on
+" filetype plugin on
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -60,7 +60,7 @@ syntax on
 set cursorline          " highlight the current line
 set autoread            " watch for file changes
 set showmatch           " show matching brackets
-"set autoindent smartindent  " auto/smart indent
+" set autoindent smartindent  " auto/smart indent
 set smarttab            " better backspace and tab functionality
 filetype on             " enable filetype detection
 filetype indent on      " enable filetype-specific indenting
