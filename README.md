@@ -1,3 +1,3 @@
 # dotfiles
 
-Dot files for ubuntu, centos and macos.
+Dotfiles for ubuntu, centos and macos.
