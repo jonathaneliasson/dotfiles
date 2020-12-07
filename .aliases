@@ -33,3 +33,6 @@ alias sha='shasum -a 256 '
 
 # ls -lha shortcut
 alias ll="ls -lha"
+
+# Set Python3 as default for python command
+alias python=/usr/local/bin/python3
