@@ -36,3 +36,4 @@ alias ll="ls -lha"
 
 # Set Python3 as default for python command
 alias python=/usr/local/bin/python3
+alias pip=/usr/local/bin/pip3
