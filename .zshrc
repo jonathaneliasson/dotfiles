@@ -1,3 +1,6 @@
+# Fix MacOS Python Crash (https://stackoverflow.com/questions/52941426/upgraded-to-macos-mojave-and-now-getting-error-in-rails-console/55623934)
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -68,7 +71,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(ansible brew docker docker-compose fzf git kubectl minikube vagrant)
+plugins=(ansible aws brew docker docker-compose fzf git kubectl minikube vagrant)
 
 source $ZSH/oh-my-zsh.sh
 

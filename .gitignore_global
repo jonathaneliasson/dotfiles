@@ -23,4 +23,8 @@ Thumbs.db
 # Repo scratch directory
 scratch/
 
+# .idea files
 .idea
+
+# vagrant files
+.vagrant/
